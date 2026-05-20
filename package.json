@@ -1,0 +1,21 @@
+{
+  "name": "manciu-dark",
+  "displayName": "Manciu Dark",
+  "description": "My favorite VS Code theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.120.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Manciu Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Manciu Dark-color-theme.json"
+      }
+    ]
+  }
+}
