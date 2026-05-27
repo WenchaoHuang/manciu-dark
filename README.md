@@ -70,4 +70,4 @@ A new .vsix file will be generated for local installation and testing.
 
 ## Changelog
 
-See [CHANGELOG.md](./CHANGELOG.md) for version history.
+See CHANGELOG.md for version history.
