@@ -90,6 +90,15 @@
 				"keyword.other.concept",
 				"keyword.other.default",
 				"keyword.other.cmake",
+				
+				// wavefront
+				"keyword.function.v.wavefront.obj",
+				"keyword.function.f.wavefront.obj",
+				"keyword.function.g.wavefront.obj",
+				"keyword.function.vn.wavefront.obj",
+				"keyword.function.vt.wavefront.obj",
+				"keyword.function.usemtl.wavefront.obj",
+				"keyword.function.mtllib.wavefront.obj",
 
 				"support.function.cmake",
 				"support.function.commandProperty.cmake",
@@ -165,10 +174,11 @@
 			"name": "String",
 			"scope": [
 				"string.quoted.double",
-				"string.unquoted.cmake",
 				"string.quoted.single.python",
 				"string.quoted.other.lt-gt.include",
 				"string.quoted.binary.single.python",
+				"string.filename.wavefront.obj",
+				"string.unquoted.cmake",
 			],
 			"settings": {
 				"foreground": "#D69D85",
@@ -181,8 +191,11 @@
 				"constant.numeric.dec.python",
 				"constant.numeric.float.python",
 				"constant.numeric.exponent.decimal",
-				"keyword.other.unit.suffix.integer",
+				"constant.numeric.float.wavefront.obj",
+				"constant.numeric.integer.wavefront.obj",
+				"constant.numeric.vertex-reference.absolute.wavefront.obj",
 				"keyword.other.unit.suffix.floating-point",
+				"keyword.other.unit.suffix.integer",
 				"keyword.other.unit.exponent.decimal",
 				"storage.type.string.python",
 			],
