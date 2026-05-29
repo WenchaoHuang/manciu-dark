@@ -43,6 +43,11 @@
 			"fontStyle": "italic",
 			"foreground": "#BDB76B",
 		},
+		"clsParameter":
+		{
+			"fontStyle": "italic",
+			"foreground": "#BDB76B",
+		},
 	},
 	"tokenColors": [
 		{
@@ -102,6 +107,7 @@
 				"entity.name.function.call",
 				"entity.name.function.member",
 				"entity.name.function.definition",
+				"meta.function-call.generic.python",
 			],
 			"settings": {
 				"foreground": "#FF8000",
@@ -220,6 +226,7 @@
 				"punctuation.terminator",
 				"punctuation.vararg-ellipses.template.definition",
 				"punctuation.separator.dot-access",
+				"punctuation.separator.period.python",
 				"punctuation.separator.pointer-access",
 				"punctuation.separator.delimiter.comma",
 				"punctuation.separator.arguments.python",
