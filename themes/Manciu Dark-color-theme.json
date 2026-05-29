@@ -66,6 +66,7 @@
 				"variable.language",
 				"constant.language",
 				"entity.name.type.enum",
+				"entity.name.tag.localname.xml",
 
 				"storage.type",
 				"storage.modifier",
@@ -239,6 +240,15 @@
 			],
 			"settings": {
 				"foreground": "#B4B4B4",
+			}
+		},
+		{
+			"name": "keywordArgument",
+			"scope": [
+				"entity.other.attribute-name.localname.xml",
+			],
+			"settings": {
+				"foreground": "#AA4926",
 			}
 		}
 	]
