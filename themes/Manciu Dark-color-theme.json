@@ -12,7 +12,9 @@
 		"enumMember": "#BD59C5",
 		"magicFunction": "#BD59C5",
 		"operatorOverload": "#FF8000",
-		
+		"tomlArrayKey": "#569CD6",
+		"tomlTableKey": "#569CD6",
+
 		"variable": "#BDB76B",
 		"variable.builtin": "#BD59C5",
 		"variable.callable": "#569CD6",
@@ -103,6 +105,7 @@
 				"support.function.cmake",
 				"support.function.commandProperty.cmake",
 				"support.type.property-name.json.comments",
+				"support.type.property-name.toml",
 				"support.type.property.cmake",
 
 				"meta.template.definition",
@@ -177,8 +180,9 @@
 			"scope": [
 				"string.quoted.double",
 				"string.quoted.single.python",
-				"string.quoted.other.lt-gt.include",
+				"string.quoted.single.basic.line.toml",
 				"string.quoted.binary.single.python",
+				"string.quoted.other.lt-gt.include",
 				"string.filename.wavefront.obj",
 				"string.unquoted.cmake",
 			],
