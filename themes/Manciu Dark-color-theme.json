@@ -243,6 +243,8 @@
 				"keyword.operator.comparison",
 				"keyword.operator.assignment",
 
+				"meta.preprocessor.conditional",
+
 				"punctuation.terminator",
 				"punctuation.vararg-ellipses.template.definition",
 				"punctuation.separator.dot-access",
