@@ -114,6 +114,7 @@
 		{
 			"name": "Function",
 			"scope":[
+				"entity.name.function.c",
 				"entity.name.function.call",
 				"entity.name.function.member",
 				"entity.name.function.definition",
