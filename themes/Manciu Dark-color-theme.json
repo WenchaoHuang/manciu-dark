@@ -117,6 +117,7 @@
 				"entity.name.function.call",
 				"entity.name.function.member",
 				"entity.name.function.definition",
+				"meta.body.function.definition.cpp",
 				"meta.function-call.generic.python",
 			],
 			"settings": {
