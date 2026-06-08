@@ -106,6 +106,7 @@
 				"support.function.cmake",
 				"support.function.commandProperty.cmake",
 				"support.type.property-name.json.comments",
+				"support.type.property-name.json",
 				"support.type.property-name.toml",
 				"support.type.property.cmake",
 				"support.type.python",
