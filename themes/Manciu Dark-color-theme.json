@@ -69,6 +69,7 @@
 				"constant.language",
 				"entity.name.type.enum",
 				"entity.name.tag.localname.xml",
+				"entity.name.tag.yaml",
 
 				"storage.type",
 				"storage.modifier",
@@ -185,6 +186,8 @@
 				"string.quoted.binary.single.python",
 				"string.quoted.other.lt-gt.include",
 				"string.filename.wavefront.obj",
+				"string.unquoted.plain.out.yaml",
+				"string.unquoted.block.yaml",
 				"string.unquoted.cmake",
 			],
 			"settings": {
