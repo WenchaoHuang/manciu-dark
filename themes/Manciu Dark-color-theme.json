@@ -107,6 +107,7 @@
 				"support.type.property-name.json.comments",
 				"support.type.property-name.toml",
 				"support.type.property.cmake",
+				"support.type.python",
 
 				"meta.template.definition",
 			],
@@ -120,6 +121,7 @@
 				"entity.name.function.c",
 				"entity.name.function.call",
 				"entity.name.function.member",
+				"entity.name.function.python",
 				"entity.name.function.definition",
 				"meta.body.function.definition.cpp",
 				"meta.function-call.generic.python",
