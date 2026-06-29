@@ -150,6 +150,7 @@
 				"comment",
 				"storage.type.class.doxygen",
 				"string.quoted.docstring.multi.python",
+				"string.quoted.docstring.raw.multi.python",
 			],
 			"settings": {
 				"fontStyle": "italic",
