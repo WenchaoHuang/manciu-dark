@@ -110,6 +110,9 @@
 				"support.type.property-name.toml",
 				"support.type.property.cmake",
 				"support.type.python",
+				
+				"support.function.be.latex",
+				"support.function.general.tex",
 
 				"meta.template.definition",
 			],
