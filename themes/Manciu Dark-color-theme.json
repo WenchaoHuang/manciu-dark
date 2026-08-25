@@ -87,6 +87,7 @@
 				"keyword.other.generator-expression.cmake",
 				"keyword.other.using.directive",
 				"keyword.other.static_assert",
+				"keyword.other.item.latex",
 				"keyword.other.typename",
 				"keyword.other.requires",
 				"keyword.other.typedef",
@@ -104,16 +105,15 @@
 				"keyword.function.mtllib.wavefront.obj",
 
 				"support.function.cmake",
+				"support.function.be.latex",
+				"support.function.general.tex",
+				"support.function.section.latex",
 				"support.function.commandProperty.cmake",
 				"support.type.property-name.json.comments",
 				"support.type.property-name.json",
 				"support.type.property-name.toml",
 				"support.type.property.cmake",
 				"support.type.python",
-				
-				"support.function.be.latex",
-				"support.function.general.tex",
-
 				"meta.template.definition",
 			],
 			"settings": {
@@ -130,6 +130,7 @@
 				"entity.name.function.definition",
 				"meta.body.function.definition.cpp",
 				"meta.function-call.generic.python",
+				"constant.other.general.math.tex",
 			],
 			"settings": {
 				"foreground": "#FF8000",
@@ -141,6 +142,7 @@
 				"entity.name.type",
 				"entity.name.type.struct",
 				"entity.name.type.template",
+				"entity.name.section.latex",
 				//"meta.body.function.definition",		// (args...) <- '...'
 			],
 			"settings": {
@@ -168,6 +170,7 @@
 				"storage.modifier.__device__.cuda-cpp",
 				"storage.modifier.__global__.cuda-cpp",
 				"support.type.variable.cmake",
+				"variable.parameter.function.latex",
 			],
 			"settings": {
 				"foreground": "#BD59C5",
@@ -194,6 +197,8 @@
 				"string.unquoted.plain.out.yaml",
 				"string.unquoted.block.yaml",
 				"string.unquoted.cmake",
+				"variable.parameter.definition.label.latex",
+				"constant.other.reference.label.latex",
 			],
 			"settings": {
 				"foreground": "#D69D85",
@@ -203,6 +208,7 @@
 			"name": "Constant Number",
 			"scope": [
 				"constant.numeric.decimal",
+				"constant.numeric.math.tex",
 				"constant.numeric.dec.python",
 				"constant.numeric.float.python",
 				"constant.numeric.exponent.decimal",
@@ -231,6 +237,9 @@
 				"meta.bracket.square.access",
 
 				"storage.type.format.python",
+				"constant.character.math.tex",
+				"support.class.math.block.environment.latex",
+				"support.class.math.block.tex",
 
 				"entity.name.type.template",
 				"entity.name.type",	// SeVector<Type, N>::Elements <- 'Elements'
@@ -245,16 +254,20 @@
 				"storage.modifier.pointer",
 				"storage.modifier.reference",
 
+				"meta.preprocessor.conditional",
+
 				"keyword.operator",
 				"keyword.operator.bitwise",
 				"keyword.operator.logical",
 				"keyword.operator.arithmetic",
 				"keyword.operator.comparison",
 				"keyword.operator.assignment",
-
-				"meta.preprocessor.conditional",
-
+				"keyword.control.equation.align.latex",
+				"keyword.control.equation.newline.latex",
+				
 				"punctuation.terminator",
+				"punctuation.math.operator.latex",
+				"punctuation.definition.constant.math.tex",
 				"punctuation.vararg-ellipses.template.definition",
 				"punctuation.separator.dot-access",
 				"punctuation.separator.period.python",
@@ -273,9 +286,11 @@
 			}
 		},
 		{
-			"name": "keywordArgument",
+			"name": "Deep red",
 			"scope": [
 				"entity.other.attribute-name.localname.xml",
+				"punctuation.definition.string.begin.tex",
+				"punctuation.definition.string.end.tex",
 			],
 			"settings": {
 				"foreground": "#AA4926",
