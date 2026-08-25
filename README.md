@@ -29,8 +29,22 @@ Building the extension from source also requires:
 
 ## Installation
 
+### VS Code Marketplace
+
+Install Manciu Dark from the
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Manciu.manciu-dark),
+or search for **Manciu Dark** in the VS Code Extensions view.
+
+You can also install it from the command line:
+
+```bash
+code --install-extension Manciu.manciu-dark
+```
+
+### Build from source
+
 This repository does not provide GitHub Release packages or prebuilt `.vsix`
-files. Clone the repository and package the extension locally:
+files. To package the extension locally, clone the repository and run `vsce`:
 
 ```bash
 git clone https://github.com/WenchaoHuang/manciu-dark.git
@@ -38,11 +52,11 @@ cd manciu-dark
 npx --yes @vscode/vsce@3.9.2 package
 ```
 
-The command creates `manciu-dark-0.0.1.vsix` in the repository root. Install it
+The command creates `manciu-dark-0.1.0.vsix` in the repository root. Install it
 from the command line:
 
 ```bash
-code --install-extension ./manciu-dark-0.0.1.vsix
+code --install-extension ./manciu-dark-0.1.0.vsix
 ```
 
 Alternatively, open the Extensions view in VS Code, select the `...` menu,
@@ -73,25 +87,6 @@ Inspect the package contents and create a local VSIX with:
 npx --yes @vscode/vsce@3.9.2 ls --tree
 npx --yes @vscode/vsce@3.9.2 package
 ```
-
-## Publishing
-
-The `publisher` in `package.json` is `WenchaoHuang`. Before the first
-Marketplace publication, create or confirm that exact Publisher ID and ensure
-your account has permission to publish under it.
-
-For each release:
-
-1. Update the version in `package.json` and add the same version to `CHANGELOG.md`.
-2. Run the package inspection and install the generated VSIX for a smoke test.
-3. Authenticate and publish:
-
-   ```bash
-   npx --yes @vscode/vsce@3.9.2 login WenchaoHuang
-   npx --yes @vscode/vsce@3.9.2 publish
-   ```
-
-4. Create a Git tag matching the published version, such as `v0.0.1`.
 
 ## Changelog
 
