@@ -1,4 +1,10 @@
 .vscode/**
 .vscode-test/**
+.github/**
+.git/**
 .gitignore
+.gitattributes
+.vscodeignore
 vsc-extension-quickstart.md
+*.vsix
+assets/*.svg

@@ -1,12 +1,22 @@
 {
   "name": "manciu-dark",
   "displayName": "Manciu Dark",
-  "description": "My favorite VS Code theme",
-  "version": "0.0.1",
-  "license": "SEE LICENSE IN LICENSE",
+  "description": "A readability-focused dark theme with semantic highlighting for C/C++, Python, CMake, CUDA, LaTeX, and common data formats.",
+  "version": "0.1.0",
+  "publisher": "Manciu",
+  "author": {
+    "name": "Wenchao Huang",
+    "url": "https://github.com/WenchaoHuang"
+  },
+  "license": "MIT",
+  "icon": "assets/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/WenchaoHuang/manciu-dark.git"
+  },
+  "homepage": "https://github.com/WenchaoHuang/manciu-dark#readme",
+  "bugs": {
+    "url": "https://github.com/WenchaoHuang/manciu-dark/issues"
   },
   "engines": {
     "vscode": "^1.120.0"
@@ -14,6 +24,24 @@
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "dark theme",
+    "color theme",
+    "semantic highlighting",
+    "c++",
+    "python",
+    "cmake",
+    "cuda",
+    "latex",
+    "json",
+    "yaml",
+    "toml",
+    "xml"
+  ],
+  "galleryBanner": {
+    "color": "#1E1E1E",
+    "theme": "dark"
+  },
   "contributes": {
     "themes": [
       {

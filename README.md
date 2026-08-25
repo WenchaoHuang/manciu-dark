@@ -1,73 +1,108 @@
 # Manciu Dark
 
-Manciu Dark is a VS Code dark theme focused on code readability, with semantic highlighting tuned for C/C++, Python, and CMake workflows.
+Manciu Dark is a readability-focused VS Code theme with semantic highlighting
+and TextMate scope tuning for C/C++, Python, CMake, CUDA, LaTeX, and common data
+formats.
 
 ## Highlights
 
-- Deep dark editor background for long coding sessions (#1E1E1E)
+- Deep dark editor background for long coding sessions (`#1E1E1E`)
 - Strong semantic color separation for faster code scanning:
-	- Type / Class / Enum: Gold (#FFD700)
-	- Function / Method: Orange (#FF8000)
-	- Variable / Parameter: Olive (#BDB76B)
-	- Keyword: Blue (#569CD6)
-	- Comment: Italic Green (#57A64A)
+  - Type / Class / Enum: Gold (`#FFD700`)
+  - Function / Method: Orange (`#FF8000`)
+  - Variable / Parameter: Olive (`#BDB76B`)
+  - Keyword: Blue (`#569CD6`)
+  - Comment: Italic Green (`#57A64A`)
 - Semantic highlighting enabled
-- Additional scope tuning for C++, Python, CUDA, and CMake
+- Additional scope tuning for C++, Python, CUDA, CMake, JSON, YAML, TOML, XML,
+  and LaTeX
 
 ## Requirements
 
-- VS Code ^1.120.0
+- VS Code `^1.120.0`
+
+Building the extension from source also requires:
+
+- Git
+- Node.js 20 or later
+- npm
 
 ## Installation
 
-### Option 1: Install local VSIX (recommended)
-
-This repository already includes a packaged extension file:
-
-- manciu-dark-0.0.1.vsix
-
-You can install it with either method below:
-
-1. Open Extensions in VS Code.
-2. Click the ... menu in the top-right corner.
-3. Select Install from VSIX....
-4. Choose manciu-dark-0.0.1.vsix.
-
-Or use the command line:
+This repository does not provide GitHub Release packages or prebuilt `.vsix`
+files. Clone the repository and package the extension locally:
 
 ```bash
-code --install-extension manciu-dark-0.0.1.vsix
+git clone https://github.com/WenchaoHuang/manciu-dark.git
+cd manciu-dark
+npx --yes @vscode/vsce@3.9.2 package
 ```
 
-### Option 2: Run in extension development mode
+The command creates `manciu-dark-0.0.1.vsix` in the repository root. Install it
+from the command line:
 
-1. Open this project folder in VS Code.
-2. Press F5 to launch an Extension Development Host.
-3. In the new window, run Preferences: Color Theme.
-4. Select Manciu Dark.
+```bash
+code --install-extension ./manciu-dark-0.0.1.vsix
+```
+
+Alternatively, open the Extensions view in VS Code, select the `...` menu,
+choose **Install from VSIX...**, and select the generated file.
 
 ## Usage
 
 After installation:
 
-1. Open the Command Palette (Ctrl+Shift+P).
-2. Run Preferences: Color Theme.
-3. Select Manciu Dark.
+1. Open the Command Palette with `Ctrl+Shift+P` on Windows/Linux or
+   `Cmd+Shift+P` on macOS.
+2. Run **Preferences: Color Theme**.
+3. Select **Manciu Dark**.
 
 ## Development
 
-Theme definition file:
+The theme definition is located at `themes/Manciu Dark-color-theme.json`.
 
-- themes/Manciu Dark-color-theme.json
+1. Clone and open the repository in VS Code.
+2. Press `F5` to launch an Extension Development Host.
+3. Select **Manciu Dark** in the new window.
+4. Use **Developer: Inspect Editor Tokens and Scopes** to inspect syntax scopes
+   when adjusting token colors.
 
-Repackage after changes:
+Inspect the package contents and create a local VSIX with:
 
 ```bash
-npx @vscode/vsce package
+npx --yes @vscode/vsce@3.9.2 ls --tree
+npx --yes @vscode/vsce@3.9.2 package
 ```
 
-A new .vsix file will be generated for local installation and testing.
+## Publishing
+
+The `publisher` in `package.json` is `WenchaoHuang`. Before the first
+Marketplace publication, create or confirm that exact Publisher ID and ensure
+your account has permission to publish under it.
+
+For each release:
+
+1. Update the version in `package.json` and add the same version to `CHANGELOG.md`.
+2. Run the package inspection and install the generated VSIX for a smoke test.
+3. Authenticate and publish:
+
+   ```bash
+   npx --yes @vscode/vsce@3.9.2 login WenchaoHuang
+   npx --yes @vscode/vsce@3.9.2 publish
+   ```
+
+4. Create a Git tag matching the published version, such as `v0.0.1`.
 
 ## Changelog
 
-See CHANGELOG.md for version history.
+See [CHANGELOG.md](CHANGELOG.md) for version history.
+
+## Feedback
+
+Report problems and scope suggestions through [GitHub Issues].
+
+## License
+
+Manciu Dark is available under the [MIT License](LICENSE).
+
+[GitHub Issues]: https://github.com/WenchaoHuang/manciu-dark/issues
