@@ -84,7 +84,6 @@
 				"keyword.operator.sizeof",
 				"keyword.operator.alignof",
 				"keyword.operator.logical.python",
-				"keyword.other.generator-expression.cmake",
 				"keyword.other.using.directive",
 				"keyword.other.static_assert",
 				"keyword.other.item.latex",
