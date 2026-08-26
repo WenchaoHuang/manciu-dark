@@ -115,6 +115,11 @@
 				"support.type.property.cmake",
 				"support.type.python",
 				"meta.template.definition",
+				"markup.underline.link.markdown",
+				"punctuation.definition.markdown",
+				"punctuation.definition.table.markdown",
+				"punctuation.definition.heading.markdown",
+				"punctuation.definition.list.begin.markdown",
 			],
 			"settings": {
 				"foreground": "#569CD6",
@@ -143,6 +148,7 @@
 				"entity.name.type.struct",
 				"entity.name.type.template",
 				"entity.name.section.latex",
+				"entity.name.section.markdown",
 				//"meta.body.function.definition",		// (args...) <- '...'
 			],
 			"settings": {
@@ -165,12 +171,13 @@
 		{
 			"name": "Constant Value",
 			"scope": [
-				"variable.other.enummember.cpp",
+				"support.type.variable.cmake",
 				"entity.name.function.decorator.python",
 				"storage.modifier.__device__.cuda-cpp",
 				"storage.modifier.__global__.cuda-cpp",
-				"support.type.variable.cmake",
 				"variable.parameter.function.latex",
+				"variable.other.enummember.cpp",
+				"fenced_code.block.language",
 			],
 			"settings": {
 				"foreground": "#BD59C5",
@@ -199,6 +206,7 @@
 				"string.unquoted.cmake",
 				"variable.parameter.definition.label.latex",
 				"constant.other.reference.label.latex",
+				"markup.inline.raw.string.markdown",
 			],
 			"settings": {
 				"foreground": "#D69D85",

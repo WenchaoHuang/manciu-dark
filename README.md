@@ -1,7 +1,7 @@
 # Manciu Dark
 
 Manciu Dark is a readability-focused VS Code theme with semantic highlighting
-and TextMate scope tuning for C/C++, Python, CMake, CUDA, LaTeX, and common data
+and TextMate scope tuning for C/C++, Python, CMake, CUDA, LaTeX, Markdown and common data
 formats.
 
 ## Highlights
