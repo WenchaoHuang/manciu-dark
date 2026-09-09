@@ -96,6 +96,11 @@
 				"keyword.other.default",
 				"keyword.other.cmake",
 				
+				// usd
+				"keyword.operator.usd",
+				"keyword.import.usd",
+				"keyword.other.usd",
+				
 				// wavefront
 				"keyword.function.v.wavefront.obj",
 				"keyword.function.f.wavefront.obj",
@@ -239,6 +244,7 @@
 				"constant.numeric.decimal",
 				"constant.numeric.math.tex",
 				"constant.numeric.dec.python",
+				"constant.numeric.float.usda",
 				"constant.numeric.float.python",
 				"constant.numeric.exponent.decimal",
 				"constant.numeric.float.wavefront.obj",
