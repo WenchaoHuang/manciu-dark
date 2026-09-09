@@ -27,6 +27,21 @@ Building the extension from source also requires:
 - Node.js 20 or later
 - npm
 
+## Recommended language extensions
+
+Manciu Dark provides the color theme, while language extensions provide the
+syntax and semantic information needed for accurate highlighting. Install the
+matching VS Code extension for the files you use:
+
+| File type | VS Code extension |
+| --- | --- |
+| `.usda` | USD Language |
+| `.toml` | Even Better TOML |
+| `CMakeLists.txt`, `.cmake` | CMake Tools |
+| `.tex`, `.sty`, `.cls` | LaTeX language support |
+| `.md` | MyST-Markdown |
+| `.py`, `.pyi` | Pylance |
+
 ## Installation
 
 ### VS Code Marketplace
