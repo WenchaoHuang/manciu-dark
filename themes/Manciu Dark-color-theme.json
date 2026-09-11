@@ -241,6 +241,7 @@
 		{
 			"name": "Constant Number",
 			"scope": [
+				"constant.numeric.json",
 				"constant.numeric.decimal",
 				"constant.numeric.math.tex",
 				"constant.numeric.dec.python",
