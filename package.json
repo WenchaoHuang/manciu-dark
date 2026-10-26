@@ -1,8 +1,8 @@
 {
   "name": "manciu-dark",
   "displayName": "Manciu Dark",
-  "description": "A readability-focused dark theme with semantic highlighting for C/C++, Python, CMake, CUDA, LaTeX, and common data formats.",
-  "version": "0.1.0",
+  "description": "A readability-focused dark theme with semantic highlighting and TextMate scope tuning for C/C++, Python, CUDA, CMake, LaTeX, Markdown, HTML, XML, JSON/JSONC, YAML, TOML, USD ASCII, and Wavefront OBJ.",
+  "version": "0.2.0",
   "publisher": "Manciu",
   "author": {
     "name": "Wenchao Huang",
@@ -33,10 +33,15 @@
     "cmake",
     "cuda",
     "latex",
+    "markdown",
+    "html",
     "json",
+    "jsonc",
     "yaml",
     "toml",
-    "xml"
+    "xml",
+    "usda",
+    "wavefront obj"
   ],
   "galleryBanner": {
     "color": "#1E1E1E",

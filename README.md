@@ -84,11 +84,11 @@ cd manciu-dark
 npx --yes @vscode/vsce@3.9.2 package
 ```
 
-The command creates `manciu-dark-0.1.0.vsix` in the repository root. Install it
+The command creates `manciu-dark-0.2.0.vsix` in the repository root. Install it
 from the command line:
 
 ```bash
-code --install-extension ./manciu-dark-0.1.0.vsix
+code --install-extension ./manciu-dark-0.2.0.vsix
 ```
 
 Alternatively, open the Extensions view in VS Code, select the `...` menu,
