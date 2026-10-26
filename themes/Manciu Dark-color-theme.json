@@ -70,6 +70,7 @@
 				"entity.name.type.enum",
 				"entity.name.tag.localname.xml",
 				"entity.name.tag.yaml",
+				"entity.name.tag.html",
 
 				"storage.type",
 				"storage.modifier",
@@ -327,6 +328,7 @@
 		{
 			"name": "Deep red",
 			"scope": [
+				"entity.other.attribute-name.html",
 				"entity.other.attribute-name.localname.xml",
 				"punctuation.definition.string.begin.tex",
 				"punctuation.definition.string.end.tex",
