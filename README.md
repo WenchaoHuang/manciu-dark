@@ -1,21 +1,35 @@
 # Manciu Dark
 
 Manciu Dark is a readability-focused VS Code theme with semantic highlighting
-and TextMate scope tuning for C/C++, Python, CMake, CUDA, LaTeX, Markdown, JSON, USDA and common data
-formats.
+and TextMate scope tuning for C/C++, Python, CUDA, CMake, LaTeX, Markdown,
+HTML, XML, JSON/JSONC, YAML, TOML, USD ASCII (`.usda`), and Wavefront OBJ.
 
 ## Highlights
 
 - Deep dark editor background for long coding sessions (`#1E1E1E`)
-- Strong semantic color separation for faster code scanning:
-  - Type / Class / Enum: Gold (`#FFD700`)
-  - Function / Method: Orange (`#FF8000`)
-  - Variable / Parameter: Olive (`#BDB76B`)
-  - Keyword: Blue (`#569CD6`)
-  - Comment: Italic Green (`#57A64A`)
-- Semantic highlighting enabled
-- Additional scope tuning for C++, Python, CUDA, CMake, JSON, YAML, TOML, XML, USDA, JSON
-  and LaTeX
+- Distinct colors for types, functions, variables, keywords, and literals
+- Semantic highlighting enabled by the theme, with additional styling for
+  built-ins, decorators, macros, and enum members
+- Language-specific scope tuning, including blue HTML/XML tag names and
+  deep red attributes, blue JSON/JSONC property names, and colors for USD
+  keywords and Wavefront OBJ directives
+
+## Color palette
+
+| Token | Color |
+| --- | --- |
+| Type / Class / Enum / Namespace | Gold (`#FFD700`) |
+| Function / Method | Orange (`#FF8000`) |
+| Variable / Parameter / Property | Olive (`#BDB76B`) |
+| Keyword / HTML tag / JSON property name | Blue (`#569CD6`) |
+| Macro / Enum member / Decorator | Purple (`#BD59C5`) |
+| String | Salmon (`#D69D85`) |
+| Number | Light green (`#B5CEA8`) |
+| Comment / Python docstring | Italic green (`#57A64A`) |
+| HTML/XML attribute / Python keyword argument | Deep red (`#AA4926`) |
+
+These are the primary colors; language-specific scopes and semantic tokens
+can use more specific rules, such as blue built-in functions and classes.
 
 ## Requirements
 
@@ -42,6 +56,10 @@ matching VS Code extension for the files you use:
 | `.md` | MyST-Markdown |
 | `.py`, `.pyi` | Pylance |
 
+VS Code includes syntax highlighting for HTML, XML, JSON/JSONC, and Markdown.
+The final colors depend on the scopes and semantic tokens supplied by the
+active language extension.
+
 ## Installation
 
 ### VS Code Marketplace
@@ -58,8 +76,7 @@ code --install-extension Manciu.manciu-dark
 
 ### Build from source
 
-This repository does not provide GitHub Release packages or prebuilt `.vsix`
-files. To package the extension locally, clone the repository and run `vsce`:
+To build a VSIX package locally, clone the repository and run `vsce`:
 
 ```bash
 git clone https://github.com/WenchaoHuang/manciu-dark.git
@@ -86,9 +103,25 @@ After installation:
 2. Run **Preferences: Color Theme**.
 3. Select **Manciu Dark**.
 
+You can also select the theme in `settings.json`:
+
+```json
+{
+  "workbench.colorTheme": "Manciu Dark",
+  "editor.semanticHighlighting.enabled": "configuredByTheme"
+}
+```
+
+The theme enables semantic highlighting by default. If colors appear different
+from those described above, check that semantic highlighting is enabled, the
+appropriate language extension is active, and your token color customizations
+are not overriding the theme.
+
 ## Development
 
-The theme definition is located at `themes/Manciu Dark-color-theme.json`.
+The theme definition is located at
+[`themes/Manciu Dark-color-theme.json`](themes/Manciu%20Dark-color-theme.json).
+It uses JSON with comments (JSONC), including trailing commas.
 
 1. Clone and open the repository in VS Code.
 2. Press `F5` to launch an Extension Development Host.
