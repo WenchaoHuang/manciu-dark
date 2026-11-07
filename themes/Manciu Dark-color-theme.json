@@ -102,6 +102,11 @@
 				"keyword.import.usd",
 				"keyword.other.usd",
 				
+				// powershell
+				"keyword.operator.unary.powershell",
+				"keyword.operator.logical.powershell",
+				"keyword.operator.comparison.powershell",
+
 				// wavefront
 				"keyword.function.v.wavefront.obj",
 				"keyword.function.f.wavefront.obj",
@@ -110,7 +115,7 @@
 				"keyword.function.vt.wavefront.obj",
 				"keyword.function.usemtl.wavefront.obj",
 				"keyword.function.mtllib.wavefront.obj",
-
+				
 				"support.function.cmake",
 				"support.function.be.latex",
 				"support.function.general.tex",
@@ -140,9 +145,11 @@
 				"entity.name.function.member",
 				"entity.name.function.python",
 				"entity.name.function.definition",
+				"entity.name.function.powershell",
 				"meta.body.function.definition.cpp",
 				"meta.function-call.generic.python",
 				"constant.other.general.math.tex",
+				"support.function.powershell",
 			],
 			"settings": {
 				"foreground": "#FF8000",
@@ -167,8 +174,8 @@
 				"entity.name.scope-resolution.namespace.block.cuda-cpp",
 				"entity.name.scope-resolution.function.definition.cpp",
 				"entity.name.section.markdown",
-				"entity.name.namespace",
 				"entity.name.section.latex",
+				"entity.name.namespace",
 				"storage.type.built-in.cpp",
 				"meta.template.definition.cpp",
 				//"meta.body.function.definition",		// (args...) <- '...'
@@ -194,6 +201,7 @@
 			"name": "Constant Value",
 			"scope": [
 				"support.type.variable.cmake",
+				"support.variable.automatic.powershell",
 				"entity.name.function.decorator.python",
 				"entity.name.function.preprocessor.cpp",
 				"entity.name.other.preprocessor.macro.predefined",
@@ -269,6 +277,7 @@
 				"variable.other.cmake",
 				"variable.other.object",
 				"variable.other.property",
+				"variable.language.powershell",
 
 				"meta.parens",
 				"meta.member.access.python",
