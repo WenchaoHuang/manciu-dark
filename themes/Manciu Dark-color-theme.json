@@ -11,12 +11,13 @@
 		"property": "#BDB76B",
 		"enumMember": "#BD59C5",
 		"magicFunction": "#BD59C5",
+		"builtinConstant": "#569CD6",		// python `None`, 'True', 'False'
 		"operatorOverload": "#FF8000",
 		"tomlArrayKey": "#569CD6",
 		"tomlTableKey": "#569CD6",
 
 		"variable": "#BDB76B",
-		"variable.builtin": "#BD59C5",
+	//	"variable.builtin": "#BD59C5",
 		"variable.callable": "#569CD6",
 		"variable.classMember": "#BDB76B",
 		
